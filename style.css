@@ -1,0 +1,102 @@
+body {
+  background-color: #feffff;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/007/070/493/original/gold-coins-illustration-background-free-vector.jpg);
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  text-align: center;
+  padding-top: 350px;
+}
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  font-style: normal;
+  text-align: center;
+  font-size: xx-large;
+  color: black;
+}
+
+.play {
+  text-align: center;
+  text-decoration: double;
+  display: flexbox;
+  margin-top: 100px;
+}
+
+.name {
+  text-align: center;
+}
+h4 {
+  color: aliceblue;
+}
+.logo-img {
+  width: 350px;
+}
+
+.arrows-img {
+  width: 150px;
+}
+#game-intro {
+  text-align: center;
+  /* background-image: url("https://static.vecteezy.com/system/resources/previews/007/070/493/original/gold-coins-illustration-background-free-vector.jpg"); */
+}
+
+#game-screen {
+  display: none;
+  margin-top: 0%;
+  padding: 20px 0px;
+  overflow: hidden;
+  position: relative;
+  background-image: url(https://img.freepik.com/free-vector/background-scene-wtih-blue-sky-green-grass_1308-101501.jpg);
+  background-size: cover;
+  /* animation: slide 5s linear infinite; */
+  width: 9200px;
+  height: 1000px;
+}
+#game-container {
+  display: flex;
+  width: 100vw;
+  padding: 20px 0px;
+  justify-content: center;
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0 -1000px;
+  }
+  95% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 0 50px;
+  }
+}
+#game-end {
+  display: none;
+  color: #fff;
+}
+.gameOver {
+  display: flexbox;
+  flex-direction: row;
+  justify-content: center;
+  height: 100px;
+  width: 50%;
+  text-align: center;
+  padding-top: 60px;
+  margin-left: 25%;
+  font-size: 100px;
+  color: #ff3c00;
+  background-color: #f8f8f6;
+  /* background-image: url(https://www.pngmart.com/files/17/Game-Over-PNG-File.png); */
+}
+body button {
+  font-size: 20px;
+  background-color: #f1c30d;
+  color: #fff;
+  padding: 15px 30px;
+  border: 0;
+  box-shadow: 0;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
