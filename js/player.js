@@ -9,7 +9,7 @@ class Player {
     this.directionY = 0;
     this.element = document.createElement("img");
 
-    this.element.src = "/Images/Cartoon-Bear-PNG-Photos.png";
+    this.element.src = "./Images/Cartoon-Bear-PNG-Photos.png";
     this.element.style.position = "absolute";
 
     this.element.style.width = `${this.width}px`;
