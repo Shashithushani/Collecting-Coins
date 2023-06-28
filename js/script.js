@@ -1,19 +1,20 @@
 window.addEventListener("load", () => {
   const startButton = document.getElementById("start-button");
   const restartButton = document.getElementById("restart-button");
-  const audio = document.getElementById("audio");
+  // const audio = document.createElement("audio");
   let game;
 
   function startGame() {
     game = new Game();
     game.start();
-    function playAudio() {
-      audio.play();
-    }
+    // function playAudio() {
+    //   let audio = new Audio("/audio/StartGame.mp3");
+    //   audio.play();
+    // }
 
-    function pauseAudio() {
-      audio.pause();
-    }
+    // function pauseAudio() {
+    //   audio.pause();
+    // }
     document.addEventListener("keydown", (event) => {
       const key = event.key;
       const possibleKeyStrokes = [
@@ -65,13 +66,11 @@ window.addEventListener("load", () => {
   }
   startButton.addEventListener("click", function () {
     startGame();
+
+    let audio = document.getElementById("audio");
+    audio.play();
   });
-  audio.addEventListener("click", function () {
-    playAudio();
-  });
-  audio.addEventListener("click", function () {
-    pauseAudio();
-  });
+
   restartButton.addEventListener("click", () => {
     location.reload();
   });

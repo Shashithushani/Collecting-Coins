@@ -20,7 +20,7 @@ class Game {
     this.gameScreen.style.height = `${this.height}`;
 
     this.startScreen.style.display = "none";
-    this.gameScreen.style.display = "block";
+    this.gameScreen.style.display = "flex";
 
     this.gameLoop();
   }
@@ -55,16 +55,18 @@ class Game {
     this.coins.forEach((coin) => {
       if (this.player.didCollide(coin)) {
         coinsToKeep.push(coin);
+
         coin.element.remove();
         this.score += 1;
         // marks = this.score;
       }
 
       coin.move();
-      if (this.score > 4) {
+      if (this.score > 9) {
         this.endGame();
       }
     });
+    // window.confirm("YOU ARE A WINNER>>!");
     this.bombs.forEach((bomb) => {
       if (this.player.didCollide(bomb)) {
         bombsToKeep.push(bomb);
@@ -86,5 +88,10 @@ class Game {
 
     this.gameScreen.style.display = "none";
     this.gameEndScreen.style.display = "block";
+    let audio = document.getElementById("audio");
+    audio.pause();
+
+    let audio2 = document.getElementById("game-end");
+    audio2.play();
   }
 }

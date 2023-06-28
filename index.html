@@ -8,9 +8,10 @@
     <title>Collecting-Coins</title>
   </head>
   <body>
+    <h1>Collecting-Coins</h1>
+    <!-- #game-intro is initially shown on the game start screen -->
+
     <main>
-      <h1>Collecting-Coins</h1>
-      <!-- #game-intro is initially shown on the game start screen -->
       <div id="game-intro">
         <label for="name">Name</label>
 
@@ -30,15 +31,19 @@
         <div id="game-screen">
           <audio id="audio">
             <source src="audio/StartGame.mp3 " type="audio/mpeg" />
+            <!--  -->
           </audio>
-          <button onclick = ("/audio/StartGame.mp3 ")>Play audio</button>
-          <button onclick >Pause audio</button>
+          <!-- - <button onclick = ("/audio/StartGame.mp3 ")>Play audio</button>
+          <button onclick >Pause audio</button> -->
         </div>
       </div>
 
       <!-- #game-end is initially hidden using CSS style display: none -->
       <div id="game-end">
         <h1 class="gameOver">Game Over</h1>
+        <audio>
+          <source src="audio/15383_1460406134.mp3" type="audio/mpeg" />
+        </audio>
         <br />
         <button id="restart-button">Restart</button>
       </div>
