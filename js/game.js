@@ -3,8 +3,6 @@ class Game {
     this.startScreen = document.getElementById("game-intro");
     this.gameScreen = document.getElementById("game-screen");
     this.gameEndScreen = document.getElementById("game-end");
-
-    this.makrs = document.getElementById("coins");
     this.height = 1920;
     this.width = 1080;
     this.player = new Player(this.gameScreen);
@@ -52,21 +50,28 @@ class Game {
     const coinsToKeep = [];
     const bombsToKeep = [];
 
-    this.coins.forEach((coin) => {
-      if (this.player.didCollide(coin)) {
-        coinsToKeep.push(coin);
+    this.coins.forEach(
+      (coin) => {
+        if (this.player.didCollide(coin)) {
+          coinsToKeep.push(coin);
 
-        coin.element.remove();
-        this.score += 1;
-        // marks = this.score;
-      }
+          coin.element.remove();
+          this.score += 1;
+        }
 
-      coin.move();
-      if (this.score > 9) {
-        this.endGame();
-      }
-    });
-    // window.confirm("YOU ARE A WINNER>>!");
+        coin.move();
+        if (this.score > 9) {
+          this.endGame();
+        }
+      },
+
+      (document.querySelector(".coins").textContent = this.score)
+    );
+    if (this.score === 10) {
+      document.querySelector("h1").textContent =
+        "Congratzzzz.. You won the game...!!!";
+    }
+
     this.bombs.forEach((bomb) => {
       if (this.player.didCollide(bomb)) {
         bombsToKeep.push(bomb);
@@ -76,9 +81,6 @@ class Game {
         bomb.move();
       }
     });
-    // if (this.score < 5) {
-    //   this.isGameOver = true;
-    // }
   }
 
   endGame() {
@@ -90,8 +92,5 @@ class Game {
     this.gameEndScreen.style.display = "block";
     let audio = document.getElementById("audio");
     audio.pause();
-
-    let audio2 = document.getElementById("game-end");
-    audio2.play();
   }
 }
