@@ -6,6 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
     <title>Collecting-Coins</title>
+    <link
+      rel="icon"
+      type="/Images/favicon (2).ico"
+      href="/Images/favicon.ico"
+    />
   </head>
   <body>
     <h1>Collecting-Coins</h1>
@@ -30,21 +35,22 @@
         </div>
         <!-- #game-screen is initially hidden using CSS style display: none -->
         <div id="game-screen">
-          <audio id="audio">
+          <audio id="audioGame">
             <source src="audio/StartGame.mp3 " type="audio/mpeg" />
             <!--  -->
           </audio>
-          <!-- - <button onclick = ("/audio/StartGame.mp3 ")>Play audio</button>
-          <button onclick >Pause audio</button> -->
+          <audio id="audioCoin"></audio>
+          <source src="audio/HumanEating TL04_42_1.mp3" type="audio/mpeg" />
         </div>
       </div>
 
       <!-- #game-end is initially hidden using CSS style display: none -->
       <div id="game-end">
         <h1 class="gameOver">Game Over</h1>
-        <audio>
+        <h3>Try Again...!</h3>
+        <!-- <audio>
           <source src="audio/15383_1460406134.mp3" type="audio/mpeg" />
-        </audio>
+        </audio> -->
         <br />
         <button id="restart-button">Restart</button>
       </div>

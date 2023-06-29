@@ -3,8 +3,8 @@ class Bomb {
     this.gameScreen = gameScreen;
     this.left = Math.floor(Math.random() * this.gameScreen.offsetWidth);
     this.top = 100;
-    this.width = 80;
-    this.height = 200;
+    this.width = 90;
+    this.height = 140;
     this.element = document.createElement("img");
     this.element.src = "./Images/Bomb.png";
     this.element.style.position = "absolute";
