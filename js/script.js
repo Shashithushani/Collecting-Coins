@@ -67,7 +67,7 @@ window.addEventListener("load", () => {
   startButton.addEventListener("click", function () {
     startGame();
 
-    let audio = document.getElementById("audio");
+    let audio = document.getElementById("audioGame");
     audio.play();
     document.querySelector("h1").textContent.visibility = "hidden";
   });

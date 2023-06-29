@@ -54,7 +54,8 @@ class Game {
       (coin) => {
         if (this.player.didCollide(coin)) {
           coinsToKeep.push(coin);
-
+          // let audio1 = document.getElementById("audioCoin");
+          // audio1.play();
           coin.element.remove();
           this.score += 1;
         }
@@ -90,7 +91,8 @@ class Game {
 
     this.gameScreen.style.display = "none";
     this.gameEndScreen.style.display = "block";
-    let audio = document.getElementById("audio");
+    let audio = document.getElementById("audioGame");
     audio.pause();
+    let text = document.querySelector("");
   }
 }

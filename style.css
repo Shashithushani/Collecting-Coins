@@ -21,6 +21,9 @@ h1 {
 em {
   font-size: larger;
 }
+h3 {
+  color: black;
+}
 
 .play {
   text-align: center;

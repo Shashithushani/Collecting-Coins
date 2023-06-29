@@ -4,9 +4,9 @@ class Coin {
     this.left = Math.floor(Math.random() * this.gameScreen.offsetWidth);
     this.top = 100;
     this.width = 80;
-    this.height = 200;
+    this.height = 130;
     this.element = document.createElement("img");
-    this.element.src = "./Images/png-cartoon-gold.png";
+    this.element.src = "./Images/Gold-coin.png";
     this.element.style.position = "absolute";
 
     this.element.style.width = `${this.width}px`;

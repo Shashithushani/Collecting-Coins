@@ -46,7 +46,7 @@ class Player {
   didCollide(obj) {
     const playerRect = this.element.getBoundingClientRect();
     const coinRect = obj.element.getBoundingClientRect();
-    // const bombRect = bomb.element.getBoundingClientRect();
+
     if (
       playerRect.left < coinRect.right &&
       playerRect.right > coinRect.left &&
