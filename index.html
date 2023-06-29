@@ -13,11 +13,11 @@
     />
   </head>
   <body>
-    <h1>Collecting-Coins</h1>
     <!-- #game-intro is initially shown on the game start screen -->
 
     <main>
       <div id="game-intro">
+        <h1>Collecting-Coins</h1>
         <label for="name">Name</label>
 
         <input type="text" id="name" name="name" required <br />
@@ -29,12 +29,12 @@
       </div>
 
       <div id="game-container">
-        <div>
-          <h2>Stats</h2>
-          <p>Coins: <span class="coins">0</span></p>
-        </div>
         <!-- #game-screen is initially hidden using CSS style display: none -->
         <div id="game-screen">
+          <div class="screen">
+            <h2>Stats</h2>
+            <p>Coins: <span class="coins">0</span></p>
+          </div>
           <audio id="audioGame">
             <source src="audio/StartGame.mp3 " type="audio/mpeg" />
             <!--  -->

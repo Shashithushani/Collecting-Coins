@@ -15,8 +15,7 @@ h1 {
   text-align: center;
   font-size: 80px;
   color: black;
-
-  /* margin: 0; */
+  margin: 0;
 }
 em {
   font-size: larger;
@@ -52,14 +51,14 @@ h4 {
 
 #game-screen {
   display: none;
-  margin-top: 0%;
-  padding: 20px 0px;
+  /* margin-top: 0%; */
+  /* padding: 20px 0px; */
   overflow: hidden;
   position: relative;
   background-image: url(https://img.freepik.com/free-vector/background-scene-wtih-blue-sky-green-grass_1308-101501.jpg);
   background-size: cover;
   /* animation: slide 5s linear infinite; */
-  width: 9200px;
+  width: 100vw;
   height: 1000px;
 }
 #game-container {

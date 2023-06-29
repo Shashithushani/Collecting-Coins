@@ -61,7 +61,7 @@ class Game {
         }
 
         coin.move();
-        if (this.score > 9) {
+        if (this.score > 10) {
           this.endGame();
         }
       },

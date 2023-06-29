@@ -39,6 +39,6 @@ Collecting-coins is a game, witch is players can collect coins and dodging the b
 ## Links
 
 - [Trello Link](https://trello.com)
-- [Slides Link](http://slides.com)
+- [Slides Link](file:///Users/shashi/Downloads/Collecting-Coins.pdf)
 - [Github repository Link](https://github.com/Shashithushani/Collecting-Coins)
 - [Deployment Link](https://shashithushani.github.io/Collecting-Coins/)
