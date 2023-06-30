@@ -19,7 +19,7 @@ Collecting-coins is a game, witch is players can collect coins and dodging the b
 ## Backlog
 
 - Adding different type of creatures.
-
+- Adding audio
 - Making the game.
 
 ## Technologies Used
@@ -38,7 +38,7 @@ Collecting-coins is a game, witch is players can collect coins and dodging the b
 
 ## Links
 
-- [Trello Link](https://trello.com)
+- [Trello Link](https://trello.com/b/uPSmBDBu/collecting-coins)
 - [Slides Link](file:///Users/shashi/Downloads/Collecting-Coins.pdf)
 - [Github repository Link](https://github.com/Shashithushani/Collecting-Coins)
 - [Deployment Link](https://shashithushani.github.io/Collecting-Coins/)

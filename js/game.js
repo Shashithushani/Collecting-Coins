@@ -3,8 +3,8 @@ class Game {
     this.startScreen = document.getElementById("game-intro");
     this.gameScreen = document.getElementById("game-screen");
     this.gameEndScreen = document.getElementById("game-end");
-    this.height = 1920;
-    this.width = 1080;
+    this.height = 1880;
+    this.width = 1000;
     this.player = new Player(this.gameScreen);
     this.coins = [];
     this.bombs = [];
@@ -54,21 +54,20 @@ class Game {
       (coin) => {
         if (this.player.didCollide(coin)) {
           coinsToKeep.push(coin);
-          // let audio1 = document.getElementById("audioCoin");
-          // audio1.play();
+
           coin.element.remove();
           this.score += 1;
         }
 
         coin.move();
-        if (this.score > 10) {
+        if (this.score > 4) {
           this.endGame();
         }
       },
 
       (document.querySelector(".coins").textContent = this.score)
     );
-    if (this.score === 10) {
+    if (this.score === 4) {
       document.querySelector("h1").textContent =
         "Congratzzzz.. You won the game...!!!";
     }
@@ -93,6 +92,6 @@ class Game {
     this.gameEndScreen.style.display = "block";
     let audio = document.getElementById("audioGame");
     audio.pause();
-    let text = document.querySelector("");
+    // let text = document.querySelector("");
   }
 }
