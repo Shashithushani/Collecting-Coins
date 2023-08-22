@@ -3,6 +3,7 @@ class Game {
     this.startScreen = document.getElementById("game-intro");
     this.gameScreen = document.getElementById("game-screen");
     this.gameEndScreen = document.getElementById("game-end");
+    // this.text = document.querySelector("h1");
     this.height = 1880;
     this.width = 1000;
     this.player = new Player(this.gameScreen);
@@ -60,15 +61,15 @@ class Game {
         }
 
         coin.move();
-        if (this.score > 4) {
+        if (this.score > 5) {
           this.endGame();
         }
-      },
+      }
 
-      (document.querySelector(".coins").textContent = this.score)
+      // (document.querySelector("coins").innerHTML = this.score)
     );
-    if (this.score === 4) {
-      document.querySelector("h1").textContent =
+    if (this.score === 6) {
+      document.querySelector("h1").innerHTML =
         "Congratzzzz.. You won the game...!!!";
     }
 
@@ -92,6 +93,5 @@ class Game {
     this.gameEndScreen.style.display = "block";
     let audio = document.getElementById("audioGame");
     audio.pause();
-    // let text = document.querySelector("");
   }
 }

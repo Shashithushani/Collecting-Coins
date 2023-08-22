@@ -62,7 +62,7 @@ window.addEventListener("load", () => {
 
     let audio = document.getElementById("audioGame");
     audio.play();
-    document.querySelector("h1").textContent.visibility = "hidden";
+    // document.querySelector("h1").innerHTML.display = "hidden";
   });
 
   restartButton.addEventListener("click", () => {
