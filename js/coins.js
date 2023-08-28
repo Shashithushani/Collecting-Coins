@@ -19,7 +19,7 @@ class Coin {
   }
 
   move() {
-    this.top += 3;
+    this.top += 2;
     this.updatePosition();
   }
 

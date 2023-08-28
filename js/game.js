@@ -4,8 +4,8 @@ class Game {
     this.gameScreen = document.getElementById("game-screen");
     this.gameEndScreen = document.getElementById("game-end");
     // this.text = document.querySelector("h1");
-    this.height = 1880;
-    this.width = 1000;
+    this.height = 1200;
+    this.width = 800;
     this.player = new Player(this.gameScreen);
     this.coins = [];
     this.bombs = [];
@@ -57,20 +57,25 @@ class Game {
           coinsToKeep.push(coin);
 
           coin.element.remove();
-          this.score += 1;
+
+          let status =
+            (document.querySelector(".coins").innerHTML =
+            this.score +=
+              1);
         }
 
         coin.move();
-        if (this.score > 5) {
+        if (this.score > 9) {
           this.endGame();
         }
       }
 
       // (document.querySelector("coins").innerHTML = this.score)
     );
-    if (this.score === 6) {
-      document.querySelector("h1").innerHTML =
-        "Congratzzzz.. You won the game...!!!";
+    if (this.score === 10) {
+      document.querySelector(
+        "h1"
+      ).innerHTML = `Congratzzzz.. You won the game...!!!`;
     }
 
     this.bombs.forEach((bomb) => {
@@ -88,7 +93,6 @@ class Game {
     this.player.element.remove();
     this.coins.forEach((coin) => coin.element.remove());
     this.bombs.forEach((bomb) => bomb.element.remove());
-
     this.gameScreen.style.display = "none";
     this.gameEndScreen.style.display = "block";
     let audio = document.getElementById("audioGame");

@@ -1,65 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./style.css" />
-    <title>Collecting-Coins</title>
-    <link
-      rel="icon"
-      type="/Images/favicon (2).ico"
-      href="/Images/favicon.ico"
-    />
-  </head>
-  <body>
-    <!-- #game-intro is initially shown on the game start screen -->
-    <h1>Collecting-Coins</h1>
-    <main>
-      <div id="game-intro">
-        <label for="name">Name</label>
 
-        <input type="text" id="name" name="name" required <br />
-        <h3>Instructions</h3>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Collecting-Coins</title>
+  <link rel="icon" type="/Images/favicon (2).ico" href="/Images/favicon.ico" />
+</head>
 
-        <p>Use the left and right arrow keys to play..</p>
-        <p><em>You have to collect 10 coins to win the game</em></p>
+<body>
+  <!-- #game-intro is initially shown on the game start screen -->
+  <h1>Collecting-Coins</h1>
+  <main>
+    <div id="game-intro">
+      <label for="name">Name</label>
 
-        <button id="start-button">START</button>
-      </div>
+      <input type="text" id="name" name="name" required <br />
+      <h3>Instructions</h3>
 
-      <div id="game-container">
-        <!-- #game-screen is initially hidden using CSS style display: none -->
-        <div id="game-screen">
-          <div class="screen">
-            <h2>Stats</h2>
-            <p>Coins: <span class="coins">0</span></p>
-          </div>
-          <audio id="audioGame">
-            <source src="audio/StartGame.mp3 " type="audio/mpeg" />
-            <!--  -->
-          </audio>
-          <audio id="audioCoin"></audio>
-          <source src="audio/HumanEating TL04_42_1.mp3" type="audio/mpeg" />
+      <p>Use the left and right arrow keys to play..</p>
+      <p><em>You have to collect 10 coins to win the game</em></p>
+      <p>Try to avoid the <span>BOMBS!</span></p>
+
+      <button id="start-button">START</button>
+    </div>
+
+    <div id="game-container">
+      <!-- #game-screen is initially hidden using CSS style display: none -->
+      <div id="game-screen">
+        <div class="stats">
+          <h2>Stats</h2>
+          <p>Coins: <span class="coins">0</span></p>
         </div>
+        <audio id="audioGame">
+          <source src="audio/StartGame.mp3 " type="audio/mpeg" />
+          <!--  -->
+        </audio>
+        <audio id="audioCoin"></audio>
+        <source src="audio/HumanEating TL04_42_1.mp3" type="audio/mpeg" />
       </div>
+    </div>
 
-      <!-- #game-end is initially hidden using CSS style display: none -->
-      <div id="game-end">
-        <h1 class="gameOver">Game Over</h1>
-        <h3>Try Again...!</h3>
-        <!-- <audio>
+    <!-- #game-end is initially hidden using CSS style display: none -->
+    <div id="game-end">
+      <h1 class="gameOver">Game Over</h1>
+
+      <h3>Try Again...!</h3>
+      <!-- <audio>
           <source src="audio/15383_1460406134.mp3" type="audio/mpeg" />
         </audio> -->
-        <br />
-        <button id="restart-button">Restart</button>
-      </div>
-    </main>
+      <br />
+      <button id="restart-button">Restart</button>
+    </div>
+  </main>
 
-    <script type="text/javascript" src="js/game.js"></script>
-    <script type="text/javascript" src="js/player.js"></script>
-    <script type="text/javascript" src="js/coins.js"></script>
-    <script type="text/javascript" src="js/bomb.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
-  </body>
+  <script type="text/javascript" src="js/game.js"></script>
+  <script type="text/javascript" src="js/player.js"></script>
+  <script type="text/javascript" src="js/coins.js"></script>
+  <script type="text/javascript" src="js/bomb.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+
 </html>

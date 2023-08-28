@@ -59,7 +59,7 @@ h4 {
   background-size: cover;
   /* animation: slide 5s linear infinite; */
   width: 100vw;
-  height: 1000px;
+  height: 760px;
 }
 #game-container {
   display: flex;
@@ -67,7 +67,10 @@ h4 {
   padding: 20px 0px;
   justify-content: center;
 }
-
+.stats {
+  color: #feffff;
+  font-size: 30px;
+}
 @keyframes slide {
   0% {
     background-position: 0 -1000px;
@@ -108,4 +111,8 @@ body button {
   box-shadow: 0;
   border-radius: 5px;
   margin-bottom: 20px;
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  /* CSS rules for medium screens */
 }
